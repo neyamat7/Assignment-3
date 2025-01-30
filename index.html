@@ -36,6 +36,7 @@
             },
             colors: {
               "main-clr": "#179800",
+              "accent-clr": "#111111",
             },
           },
         },
@@ -43,6 +44,482 @@
     </script>
   </head>
   <body class="font-sora">
-    <h1 class="text-5xl">nature's platter</h1>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      <div class="wrapper max-w-[1300px] mx-auto mt-3 md:mt-5">
+        <nav
+          class="flex justify-between border-b border-main-clr lg:border-none"
+        >
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="hidden lg:flex">
+                <img src="c2-assets/logo-header.png" alt="" />
+              </div>
+              <div class="lg:hidden">
+                <img class="w-16" src="c2-assets/mobile-logo.png" alt="" />
+              </div>
+            </div>
+
+            <!-- nav items -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- nav end -->
+            <div class="navbar-end">
+              <div class="lg:hidden">
+                <i class="fa-solid fa-bars text-3xl"></i>
+              </div>
+
+              <!-- buttons -->
+              <div class="hidden lg:flex items-center gap-5">
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+
+                <i
+                  class="fa-solid fa-cart-shopping hover:scale-110 text-xl transition-all"
+                ></i>
+
+                <div class="flex gap-3 items-center">
+                  <a
+                    class="btn hidden lg:flex border border-main-clr text-base bg-transparent hover:bg-main-clr hover:text-white"
+                    >Login</a
+                  >
+                  <a
+                    class="btn hidden lg:flex bg-main-clr text-white text-base hover:bg-transparent hover:text-black"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- banner section -->
+        <section class="mt-10 lg:mt-20">
+          <!-- banner heading -->
+          <div class="text-center mx-auto">
+            <h1
+              class="text-3xl lg:text-[56px] leading-[70px] mb-5 font-semibold"
+            >
+              Freshness
+              <span class="text-main-clr"
+                >You Can <span><br /></span> Count</span
+              >
+              On, Prices You’ll Love!
+            </h1>
+            <p class="lg:w-[50%] mx-auto">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry staples, we’ve got you covered every day!
+            </p>
+          </div>
+
+          <!-- banner image -->
+          <div>
+            <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="" />
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- services section -->
+      <section class="mt-20 max-w-[1300px] mx-auto">
+        <!-- titles -->
+        <h2 class="text-main-clr text-4xl font-semibold">Services</h2>
+
+        <!-- cards container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center mt-8"
+        >
+          <!-- card 1 -->
+          <div
+            class="p-8 flex flex-col items-center justify-center text-center gap-3 bg-[#EFEBE3] rounded-2xl max-w-[425px]"
+          >
+            <div class="mb-3 bg-white p-6 rounded-full">
+              <img src="c2-assets/service.png" alt="" />
+            </div>
+            <h2 class="text-2xl font-semibold">24/7 Services</h2>
+            <p class="text-accent-clr text-xl font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="p-8 flex flex-col items-center justify-center text-center gap-3 bg-[#EFEBE3] rounded-2xl max-w-[425px]"
+          >
+            <div class="mb-3 bg-white p-6 rounded-full">
+              <img src="c2-assets/delivery.png" alt="" />
+            </div>
+            <h2 class="text-2xl font-semibold">Fast Delivery</h2>
+            <p class="text-accent-clr text-xl font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="p-8 flex flex-col items-center justify-center text-center gap-3 bg-[#EFEBE3] rounded-2xl max-w-[425px]"
+          >
+            <div class="mb-3 bg-white p-6 rounded-full">
+              <img src="c2-assets/healthy.png" alt="" />
+            </div>
+            <h2 class="text-2xl font-semibold">Fast Delivery</h2>
+            <p class="text-accent-clr text-xl font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular products -->
+      <section class="mt-20 py-10 bg-[#EFEBE3]">
+        <div class="max-w-[1300px] mx-auto px-4">
+          <!-- products title -->
+          <h2 class="text-main-clr text-4xl font-semibold">Popular Products</h2>
+
+          <!-- popular products card container -->
+          <div
+            class="mt-8 grid grid-rows-8 lg:grid-rows-3 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 justify-center justify-items-stretch"
+          >
+            <!-- long card -->
+            <div
+              class="bg-gradient-to-br from-[#00e600] to-green-200 col-span-2 row-span-4 lg:row-span-3 px-2 relative rounded-lg min-[360px]:pl-5 min-[425px]:pl-7 md:pl-3 lg:pl-7"
+            >
+              <div
+                class="mt-3 min-[360px]:mt-10 sm:mt-20 md:mt-10 lg:mt-20 flex flex-col items-start gap-1 min-[360px]:gap-4 sm:gap-5"
+              >
+                <h2
+                  class="text-white text-3xl min-[500px]:text-4xl sm:text-5xl font-semibold"
+                >
+                  30% off
+                </h2>
+                <p class="w-5/6 sm:w-[70%]">
+                  Discover a world of treats, toys and essentials handpicked for
+                </p>
+
+                <button class="btn hover:scale-105 bg-white text-base">
+                  Buy Now
+                </button>
+              </div>
+
+              <div class="absolute right-0 bottom-0">
+                <img
+                  class="object-cover"
+                  src="c2-assets/vegetable-offer.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- small cards 1-->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 2 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 3 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 4 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 5 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+            <!-- small card 6 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 7 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 8 -->
+            <div
+              class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small
+                    class="text-xs sm:text-base md:text-xs lg:text-base font-semibold"
+                    >4.5</small
+                  >
+                </div>
+
+                <h3
+                  class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
+                >
+                  Onion 1KG
+                </h3>
+                <p
+                  class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
+                >
+                  $39.99
+                </p>
+              </div>
+            </div>
+
+            <!-- small card 9 -->
+            <div
+              class="lg:flex items-center lg:items-stretch gap-2 sm:gap-4 p-3 sm:p-5 rounded-lg bg-white hidden"
+            >
+              <div class="bg-[#EFEBE3] rounded-lg flex items-center">
+                <img src="c2-assets/onion.png" alt="" />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <div>
+                  <i class="fa-solid fa-star text-[#FFC107]"></i>
+                  <small class="text-xs sm:text-base font-semibold">4.5</small>
+                </div>
+
+                <h3 class="text-sm whitespace-nowrap sm:text-lg font-medium">
+                  Onion 1KG
+                </h3>
+                <p class="text-xs sm:text-base font-medium">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- offer section -->
+      <section
+        class="mt-20 max-w-[1300px] mx-auto flex flex-col gap-7 lg:flex-row"
+      >
+        <div class="lg:basis-3/5 h-[500px] bg-red-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          saepe optio omnis laboriosam impedit placeat laudantium aspernatur
+          labore reiciendis dolor molestiae blanditiis illum vero, asperiores
+          aut ipsum fugiat explicabo sed a reprehenderit animi culpa, pariatur
+          consequatur! Sit ipsam asperiores laudantium?
+        </div>
+        <div class="lg:basis-2/5 h-[500px] bg-green-500">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+          nam culpa corrupti. Natus veritatis quibusdam, vero reprehenderit quis
+          pariatur suscipit. Cumque inventore eos hic similique vitae architecto
+          corrupti, doloremque iure minima ipsum asperiores totam minus quasi
+          nostrum provident ea magnam!
+        </div>
+      </section>
+    </main>
   </body>
 </html>
+
+<!-- <div>
+  <img src="c2-assets/logo-header.png" alt="" />
+</div>
+ 
+<ul>
+  <li><a href="#">Product</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact us</a></li>
+</ul>
+ 
+<div>
+  <i class="fa-solid fa-magnifying-glass"></i>
+
+  <i class="fa-solid fa-cart-shopping"></i>
+
+  <button>Login</button>
+  <button>Register</button>
+</div> -->
