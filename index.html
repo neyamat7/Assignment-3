@@ -84,11 +84,11 @@
 
                 <div class="flex gap-3 items-center">
                   <a
-                    class="btn hidden lg:flex border border-main-clr text-base bg-transparent hover:bg-main-clr hover:text-white"
+                    class="btn hidden lg:flex border border-main-clr text-green-700 text-base bg-transparent hover:bg-main-clr hover:text-white"
                     >Login</a
                   >
                   <a
-                    class="btn hidden lg:flex bg-main-clr text-white text-base hover:bg-transparent hover:text-black"
+                    class="btn hidden lg:flex bg-main-clr text-white text-base hover:bg-transparent hover:text-green-700"
                     >Register</a
                   >
                 </div>
@@ -559,12 +559,136 @@
           </div>
         </div>
       </section>
+
+      <!-- what's in season section -->
+      <section class="max-w-[1300px] mx-auto px-4 mt-20">
+        <!-- season titles -->
+        <h2 class="text-main-clr text-4xl font-semibold">What's in Season</h2>
+
+        <!-- seasons button -->
+        <div class="flex gap-3 mt-8">
+          <button
+            class="btn bg-transparent hover:bg-main-clr text-main-clr hover:text-white border border-green-400 text-base font-semibold"
+          >
+            Winter
+          </button>
+          <button
+            class="btn bg-main-clr text-white text-base font-semibold hover:bg-transparent hover:text-main-clr"
+          >
+            Summer
+          </button>
+        </div>
+
+        <!-- season cards container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 gap-4 justify-items-center"
+        >
+          <!-- card 1 -->
+          <div
+            class="bg-gradient-to-r shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] flex flex-col items-center gap-3 p-3 rounded-md pt-4 text-center max-w-[320px]"
+          >
+            <div class="h-3/5 rounded-md">
+              <img
+                class="w-full h-full rounded-md"
+                src="c2-assets/cauliflower.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl font-bold">Cauliflower</h1>
+            <p class="text-accent-clr">
+              This is packed with vitamins, low in calories and a versatitle
+              ingredient for healthy meals
+            </p>
+            <button
+              class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
+            >
+              Add To Cart
+            </button>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="bg-gradient-to-r shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] flex flex-col items-center gap-3 p-3 rounded-md pt-4 text-center max-w-[320px]"
+          >
+            <div class="h-3/5 rounded-md">
+              <img
+                class="w-full h-full rounded-md"
+                src="c2-assets/beans.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl font-bold">Beans</h1>
+            <p class="text-accent-clr">
+              This is packed with vitamins, low in calories and a versatitle
+              ingredient for healthy meals
+            </p>
+            <button
+              class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
+            >
+              Add To Cart
+            </button>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="bg-gradient-to-r shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] flex flex-col items-center gap-3 p-3 rounded-md pt-4 text-center max-w-[320px]"
+          >
+            <div class="h-3/5 rounded-md">
+              <img
+                class="w-full h-full rounded-md"
+                src="c2-assets/carrots.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl font-bold">Carrots</h1>
+            <p class="text-accent-clr">
+              This is packed with vitamins, low in calories and a versatitle
+              ingredient for healthy meals
+            </p>
+            <button
+              class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
+            >
+              Add To Cart
+            </button>
+          </div>
+
+          <!-- card 4 -->
+          <div
+            class="bg-gradient-to-r shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] flex flex-col items-center gap-3 p-3 rounded-md pt-4 text-center max-w-[320px]"
+          >
+            <div class="h-3/5 rounded-md">
+              <img
+                class="w-full h-full rounded-md"
+                src="c2-assets/radishe.jpg"
+                alt=""
+              />
+            </div>
+            <h1 class="text-xl font-bold">Radishe</h1>
+            <p class="text-accent-clr">
+              This is packed with vitamins, low in calories and a versatitle
+              ingredient for healthy meals
+            </p>
+            <button
+              class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
+            >
+              Add To Cart
+            </button>
+          </div>
+
+          <!-- see more btn -->
+          <button
+            class="btn bg-green-700 hover:bg-transparent hover:text-green-700 text-white md:col-span-2 lg:col-span-4 justify-self-center md:justify-self-end"
+          >
+            Sea More
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="mt-[350px] bg-main-clr pb-12 relative">
       <!-- overlay card -->
       <div
-        class="max-w-[1300px] mx-auto rounded-2xl relative -translate-y-1/2 mb-[-40%] sm:mb-[-30%] md:mb-[-12%]"
+        class="max-w-[1300px] mx-auto rounded-2xl relative -translate-y-1/2 mb-[-40%] sm:mb-[-30%] md:mb-[-12%] min-[1300px]:mb-[-8%]"
       >
         <div
           class="rounded-xl mx-4 sm:mx-10 md:mx-16 min-[1350px]:mx-0 px-3 sm:px-10 md:px-20 pb-4 md:py-12 bg-[#EFEBE3] flex flex-col md:flex-row md:gap-0"
@@ -592,7 +716,7 @@
               placeholder="Your Email..."
             />
             <button
-              class="btn bg-main-clr text-white hover:bg-transparent hover:text-black"
+              class="btn bg-main-clr text-white hover:bg-transparent hover:text-green-700"
             >
               Subscribe
             </button>
