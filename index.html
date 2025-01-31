@@ -31,6 +31,11 @@
       tailwind.config = {
         theme: {
           extend: {
+            keyframs: {
+              "banner-header": {
+                to: { transform: "translateY(0)" },
+              },
+            },
             fontFamily: {
               sora: ["Sora", "serif"],
             },
@@ -42,6 +47,27 @@
         },
       };
     </script>
+
+    <!-- custom css -->
+    <style>
+      @keyframes animateElement {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .banner-header {
+        animation: animateElement 1s ease forwards;
+      }
+
+      .banner-image {
+        animation: animateElement 1s ease-in-out forwards;
+      }
+      .banner-desc {
+        animation: animateElement 1s ease-in-out forwards;
+      }
+    </style>
   </head>
   <body class="font-sora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
@@ -102,7 +128,7 @@
           <!-- banner heading -->
           <div class="text-center mx-auto">
             <h1
-              class="text-3xl md:text-4xl lg:text-[56px] leading-[45px] md:leading-[50px] lg:leading-[70px] mb-5 font-semibold px-3"
+              class="banner-header text-3xl md:text-4xl lg:text-[56px] leading-[45px] md:leading-[50px] lg:leading-[70px] mb-5 font-semibold px-3 -translate-y-1/2 opacity-0"
             >
               Freshness
               <span class="text-main-clr"
@@ -110,14 +136,16 @@
               >
               On, Prices You’ll Love!
             </h1>
-            <p class="md:w-[80%] lg:w-[50%] mx-auto px-4 sm:px-10">
+            <p
+              class="md:w-[80%] lg:w-[50%] mx-auto px-4 sm:px-10 opacity-0 banner-desc -translate-y-6"
+            >
               Shop your daily essentials at unbeatable prices. From fresh
               produce to pantry staples, we’ve got you covered every day!
             </p>
           </div>
 
           <!-- banner image -->
-          <div>
+          <div class="banner-image translate-y-96 opacity-20">
             <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="" />
           </div>
         </section>
@@ -129,7 +157,11 @@
       <!-- services section -->
       <section class="mt-20 max-w-[1300px] mx-auto px-4">
         <!-- titles -->
-        <h2 class="text-main-clr text-4xl font-semibold">Services</h2>
+        <h2
+          class="text-main-clr text-4xl font-semibold text-center sm:text-left"
+        >
+          Services
+        </h2>
 
         <!-- cards container -->
         <div
@@ -144,8 +176,8 @@
             </div>
             <h2 class="text-2xl font-semibold">24/7 Services</h2>
             <p class="text-accent-clr text-xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              24/7 services ensure you get assistance anytime and very helpful
+              for your all needs.
             </p>
           </div>
 
@@ -158,8 +190,8 @@
             </div>
             <h2 class="text-2xl font-semibold">Fast Delivery</h2>
             <p class="text-accent-clr text-xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              Fast delivery ensures your products arrive very quick, maximum
+              satisfaction.
             </p>
           </div>
 
@@ -170,10 +202,10 @@
             <div class="mb-3 bg-white p-6 rounded-full">
               <img src="c2-assets/healthy.png" alt="" />
             </div>
-            <h2 class="text-2xl font-semibold">Fast Delivery</h2>
+            <h2 class="text-2xl font-semibold">Healthy Products</h2>
             <p class="text-accent-clr text-xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              Healthy products freshen your body, boost energy, and support
+              overall good for natural things.
             </p>
           </div>
         </div>
@@ -183,7 +215,11 @@
       <section class="mt-20 py-10 bg-[#EFEBE3]">
         <div class="max-w-[1300px] mx-auto px-4">
           <!-- products title -->
-          <h2 class="text-main-clr text-4xl font-semibold">Popular Products</h2>
+          <h2
+            class="text-main-clr text-4xl font-semibold text-center sm:text-left"
+          >
+            Popular Products
+          </h2>
 
           <!-- popular products card container -->
           <div
@@ -254,7 +290,7 @@
               class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
             >
               <div class="bg-[#EFEBE3] rounded-lg flex items-center">
-                <img src="c2-assets/onion.png" alt="" />
+                <img src="c2-assets/potato.png" alt="" />
               </div>
 
               <div class="flex flex-col gap-1">
@@ -269,7 +305,7 @@
                 <h3
                   class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
                 >
-                  Onion 1KG
+                  Potato 1KG
                 </h3>
                 <p
                   class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
@@ -284,7 +320,7 @@
               class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
             >
               <div class="bg-[#EFEBE3] rounded-lg flex items-center">
-                <img src="c2-assets/onion.png" alt="" />
+                <img src="c2-assets/tomato.png" alt="" />
               </div>
 
               <div class="flex flex-col gap-1">
@@ -299,7 +335,7 @@
                 <h3
                   class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
                 >
-                  Onion 1KG
+                  Tomato 1KG
                 </h3>
                 <p
                   class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
@@ -314,7 +350,7 @@
               class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
             >
               <div class="bg-[#EFEBE3] rounded-lg flex items-center">
-                <img src="c2-assets/onion.png" alt="" />
+                <img src="c2-assets/potato.png" alt="" />
               </div>
 
               <div class="flex flex-col gap-1">
@@ -329,7 +365,7 @@
                 <h3
                   class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
                 >
-                  Onion 1KG
+                  Potato 1KG
                 </h3>
                 <p
                   class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
@@ -373,7 +409,7 @@
               class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
             >
               <div class="bg-[#EFEBE3] rounded-lg flex items-center">
-                <img src="c2-assets/onion.png" alt="" />
+                <img src="c2-assets/potato.png" alt="" />
               </div>
 
               <div class="flex flex-col gap-1">
@@ -388,7 +424,7 @@
                 <h3
                   class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
                 >
-                  Onion 1KG
+                  Potato 1KG
                 </h3>
                 <p
                   class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
@@ -433,7 +469,7 @@
               class="flex items-center lg:items-stretch gap-2 lg:gap-4 p-3 lg:p-5 rounded-lg bg-white"
             >
               <div class="bg-[#EFEBE3] rounded-lg flex items-center">
-                <img src="c2-assets/onion.png" alt="" />
+                <img src="c2-assets/tomato.png" alt="" />
               </div>
 
               <div class="flex flex-col gap-1">
@@ -448,7 +484,7 @@
                 <h3
                   class="text-sm whitespace-nowrap sm:text-lg md:text-sm lg:text-lg font-medium"
                 >
-                  Onion 1KG
+                  Tomato 1KG
                 </h3>
                 <p
                   class="text-xs sm:text-base md:text-xs lg:text-base font-medium"
@@ -485,7 +521,11 @@
       <!-- offer section -->
       <section class="mt-20 max-w-[1300px] mx-auto px-4">
         <!-- offers title -->
-        <h2 class="text-main-clr text-4xl font-semibold">Arrival & Offers</h2>
+        <h2
+          class="text-main-clr text-4xl font-semibold text-center sm:text-left"
+        >
+          Arrival & Offers
+        </h2>
 
         <!-- cards -->
         <div class="flex flex-col gap-3 lg:flex-row mt-8">
@@ -563,10 +603,14 @@
       <!-- what's in season section -->
       <section class="max-w-[1300px] mx-auto px-4 mt-20">
         <!-- season titles -->
-        <h2 class="text-main-clr text-4xl font-semibold">What's in Season</h2>
+        <h2
+          class="text-main-clr text-4xl font-semibold text-center sm:text-left"
+        >
+          What's in Season
+        </h2>
 
         <!-- seasons button -->
-        <div class="flex gap-3 mt-8">
+        <div class="flex gap-3 mt-6 justify-center sm:justify-start">
           <button
             class="btn bg-transparent hover:bg-main-clr text-main-clr hover:text-white border border-green-400 text-base font-semibold"
           >
@@ -597,7 +641,7 @@
             <h1 class="text-xl font-bold">Cauliflower</h1>
             <p class="text-accent-clr">
               This is packed with vitamins, low in calories and a versatitle
-              ingredient for healthy meals
+              ingredient for healthy meals.
             </p>
             <button
               class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
@@ -619,8 +663,8 @@
             </div>
             <h1 class="text-xl font-bold">Beans</h1>
             <p class="text-accent-clr">
-              This is packed with vitamins, low in calories and a versatitle
-              ingredient for healthy meals
+              Beans are protein-rich, also fiber sourced, heart healthy and
+              versatile in cooking.
             </p>
             <button
               class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
@@ -642,8 +686,8 @@
             </div>
             <h1 class="text-xl font-bold">Carrots</h1>
             <p class="text-accent-clr">
-              This is packed with vitamins, low in calories and a versatitle
-              ingredient for healthy meals
+              Carrots are filled with carotene, very low in calories and so
+              great for visions.
             </p>
             <button
               class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
@@ -665,8 +709,8 @@
             </div>
             <h1 class="text-xl font-bold">Radishe</h1>
             <p class="text-accent-clr">
-              This is packed with vitamins, low in calories and a versatitle
-              ingredient for healthy meals
+              Radishes are vitamin rich, excellent for degesting and also boost
+              your immune system.
             </p>
             <button
               class="btn hover:bg-transparent hover:text-green-700 bg-main-clr text-white"
@@ -686,7 +730,7 @@
     </main>
 
     <footer class="mt-[350px] bg-main-clr pb-12 relative">
-      <!-- overlay card -->
+      <!-- overlap card -->
       <div
         class="max-w-[1300px] mx-auto rounded-2xl relative -translate-y-1/2 mb-[-40%] sm:mb-[-30%] md:mb-[-12%] min-[1300px]:mb-[-8%]"
       >
