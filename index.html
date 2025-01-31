@@ -31,11 +31,6 @@
       tailwind.config = {
         theme: {
           extend: {
-            keyframs: {
-              "banner-header": {
-                to: { transform: "translateY(0)" },
-              },
-            },
             fontFamily: {
               sora: ["Sora", "serif"],
             },
@@ -128,7 +123,7 @@
           <!-- banner heading -->
           <div class="text-center mx-auto">
             <h1
-              class="banner-header text-3xl md:text-4xl lg:text-[56px] leading-[45px] md:leading-[50px] lg:leading-[70px] mb-5 font-semibold px-3 -translate-y-1/2 opacity-0"
+              class="banner-header text-3xl md:text-4xl lg:text-[56px] leading-[45px] md:leading-[50px] lg:leading-[70px] mb-5 font-semibold px-3 animate-bounce"
             >
               Freshness
               <span class="text-main-clr"
@@ -729,51 +724,53 @@
       </section>
     </main>
 
-    <footer class="mt-[350px] bg-main-clr pb-12 relative">
-      <!-- overlap card -->
+    <!-- overlap card -->
+    <div
+      class="max-w-[1300px] mx-auto rounded-2xl relative z-10 translate-y-1/2 -mt-40"
+    >
       <div
-        class="max-w-[1300px] mx-auto rounded-2xl relative -translate-y-1/2 mb-[-40%] sm:mb-[-30%] md:mb-[-12%] min-[1300px]:mb-[-8%]"
+        class="rounded-xl mx-4 sm:mx-10 md:mx-16 min-[1350px]:mx-0 px-3 sm:px-10 md:px-20 pb-4 md:py-12 bg-[#EFEBE3] flex flex-col md:flex-row md:gap-0"
       >
-        <div
-          class="rounded-xl mx-4 sm:mx-10 md:mx-16 min-[1350px]:mx-0 px-3 sm:px-10 md:px-20 pb-4 md:py-12 bg-[#EFEBE3] flex flex-col md:flex-row md:gap-0"
-        >
-          <!-- overlay image -->
-          <div class="flex-1 flex justify-center scale-75 sm:scale-100">
-            <img src="c2-assets/vegetable-busket.png" alt="" />
-          </div>
+        <!-- overlay image -->
+        <div class="flex-1 flex justify-center scale-75 sm:scale-100">
+          <img src="c2-assets/vegetable-busket.png" alt="" />
+        </div>
 
-          <!-- overlay text content -->
-          <div
-            class="flex-1 flex flex-col text-center md:text-left items-center md:items-start justify-center gap-4 md:gap-8"
-          >
-            <div>
-              <h2
-                class="text-2xl text-main-clr sm:text-4xl font-semibold mb-2 sm:mb-4"
-              >
-                Get Grocery News!
-              </h2>
-              <p>Exclusive training tips, ticks, product deals and more.</p>
-            </div>
-            <input
-              class="py-3 px-2 min-w-[200px] max-w-full sm:max-w-[420px] w-full rounded-lg"
-              type="email"
-              placeholder="Your Email..."
-            />
-            <button
-              class="btn bg-main-clr text-white hover:bg-transparent hover:text-green-700"
+        <!-- overlay text content -->
+        <div
+          class="flex-1 flex flex-col text-center md:text-left items-center md:items-start justify-center gap-4 md:gap-8"
+        >
+          <div>
+            <h2
+              class="text-2xl text-main-clr sm:text-4xl font-semibold mb-2 sm:mb-4"
             >
-              Subscribe
-            </button>
+              Get Grocery News!
+            </h2>
+            <p>Exclusive training tips, ticks, product deals and more.</p>
           </div>
+          <input
+            class="py-3 px-2 min-w-[200px] max-w-full sm:max-w-[420px] w-full rounded-lg"
+            type="email"
+            placeholder="Your Email..."
+          />
+          <button
+            class="btn bg-main-clr text-white hover:bg-transparent hover:text-green-700"
+          >
+            Subscribe
+          </button>
         </div>
       </div>
+    </div>
 
+    <!-- footer -->
+
+    <footer class="bg-main-clr pb-12 pt-80 md:pt-72 relative">
       <!-- footer content -->
 
       <div
         class="max-w-[1300px] mx-auto px-4 text-[#FFFFFFB3] grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 justify-between"
       >
-        <!-- header content -->
+        <!-- logo content -->
         <div>
           <div><img src="c2-assets/logo-footer.png" alt="" /></div>
           <p class="min-[500px]:w-3/5 md:w-full lg:w-4/5">
@@ -785,9 +782,15 @@
         <!-- nav items -->
         <div class="md:justify-self-center">
           <ul class="flex flex-col gap-5">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li class="hover:underline transition-all">
+              <a href="#">Product</a>
+            </li>
+            <li class="hover:underline transition-all">
+              <a href="#">Services</a>
+            </li>
+            <li class="hover:underline transition-all">
+              <a href="#">Contact us</a>
+            </li>
           </ul>
         </div>
 
@@ -797,13 +800,13 @@
 
           <!-- icon container -->
           <div class="text-3xl flex gap-7 mt-3">
-            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook hover:scale-110"></i>
 
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram hover:scale-110"></i>
 
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin hover:scale-110"></i>
 
-            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-youtube hover:scale-110"></i>
           </div>
         </div>
       </div>
