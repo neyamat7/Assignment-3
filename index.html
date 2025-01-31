@@ -47,7 +47,7 @@
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <div class="wrapper max-w-[1300px] mx-auto mt-3 md:mt-5">
         <nav
-          class="flex justify-between border-b border-main-clr lg:border-none"
+          class="px-4 flex justify-between border-b border-main-clr lg:border-none"
         >
           <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -102,7 +102,7 @@
           <!-- banner heading -->
           <div class="text-center mx-auto">
             <h1
-              class="text-3xl lg:text-[56px] leading-[70px] mb-5 font-semibold"
+              class="text-3xl md:text-4xl lg:text-[56px] leading-[45px] md:leading-[50px] lg:leading-[70px] mb-5 font-semibold px-3"
             >
               Freshness
               <span class="text-main-clr"
@@ -110,7 +110,7 @@
               >
               On, Prices You’ll Love!
             </h1>
-            <p class="lg:w-[50%] mx-auto">
+            <p class="md:w-[80%] lg:w-[50%] mx-auto px-4 sm:px-10">
               Shop your daily essentials at unbeatable prices. From fresh
               produce to pantry staples, we’ve got you covered every day!
             </p>
@@ -127,7 +127,7 @@
     <!-- main section -->
     <main>
       <!-- services section -->
-      <section class="mt-20 max-w-[1300px] mx-auto">
+      <section class="mt-20 max-w-[1300px] mx-auto px-4">
         <!-- titles -->
         <h2 class="text-main-clr text-4xl font-semibold">Services</h2>
 
@@ -187,7 +187,7 @@
 
           <!-- popular products card container -->
           <div
-            class="mt-8 grid grid-rows-8 lg:grid-rows-3 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 justify-center justify-items-stretch"
+            class="mt-8 grid grid-rows-8 md:grid-rows-4 lg:grid-rows-3 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 justify-center justify-items-stretch"
           >
             <!-- long card -->
             <div
@@ -483,25 +483,85 @@
       </section>
 
       <!-- offer section -->
-      <section
-        class="mt-20 max-w-[1300px] mx-auto flex flex-col gap-7 lg:flex-row"
-      >
-        <div class="lg:basis-3/5 h-[500px] bg-red-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          saepe optio omnis laboriosam impedit placeat laudantium aspernatur
-          labore reiciendis dolor molestiae blanditiis illum vero, asperiores
-          aut ipsum fugiat explicabo sed a reprehenderit animi culpa, pariatur
-          consequatur! Sit ipsam asperiores laudantium?
-        </div>
-        <div class="lg:basis-2/5 h-[500px] bg-green-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-          nam culpa corrupti. Natus veritatis quibusdam, vero reprehenderit quis
-          pariatur suscipit. Cumque inventore eos hic similique vitae architecto
-          corrupti, doloremque iure minima ipsum asperiores totam minus quasi
-          nostrum provident ea magnam!
+      <section class="mt-20 max-w-[1300px] mx-auto px-4">
+        <!-- offers title -->
+        <h2 class="text-main-clr text-4xl font-semibold">Arrival & Offers</h2>
+
+        <!-- cards -->
+        <div class="flex flex-col gap-3 lg:flex-row mt-8">
+          <!-- green card -->
+          <div
+            class="lg:basis-3/5 max-h-[344px] bg-[#115414] rounded-2xl p-5 sm:pl-7 md:p-8 pr-0 md:pr-0 pb-2 sm:pb-2 flex justify-between items-center"
+          >
+            <!-- daawat offer content -->
+            <div class="flex flex-col items-start gap-2 md:gap-6">
+              <div>
+                <img
+                  class="scale-75 min-[360px]:scale-90 md:scale-100 -ml-6 md:ml-0"
+                  src="c2-assets/dawat-logo.png"
+                  alt=""
+                />
+              </div>
+
+              <span
+                class="bg-[#63B76D] py-3 px-3 min-[500px]:px-7 rounded-xl mt-2 whitespace-nowrap text-xs sm:text-base text-white"
+                >Cook Exotic Dishes</span
+              >
+              <p
+                class="text-lg min-[500px]:text-xl sm:text-3xl md:text-4xl lg:text-3xl text-white whitespace-nowrap"
+              >
+                UP to <span class="font-bold">20% OFF</span>
+              </p>
+            </div>
+
+            <!-- dawat offer image -->
+            <div
+              class="pb-0 min-[425px]:basis-3/5 md:basis-auto lg:scale-95 min-[1200px]:scale-auto"
+            >
+              <img class="h-full" src="c2-assets/dawat-mock-up.png" alt="" />
+            </div>
+          </div>
+
+          <!-- blue card -->
+          <div
+            class="lg:basis-[40%] max-h-[195px] min-[450px]:max-h-[230px] sm:max-h-[344px] bg-[#102861] rounded-2xl relative pl-5 flex justify-between pt-1 pr-2 min-[390px]:pr-5 min-[500px]:pr-8 lg:pr-3 sm:pl-8 lg:pl-4 lg:gap-2"
+          >
+            <!-- text content -->
+            <div
+              class="basis-3/5 lg:basis-1/2 flex flex-col items-start gap-2 sm:gap-3 justify-center"
+            >
+              <div class="max-h-[70px] min-[360px]:max-h-[90px] sm:max-h-full">
+                <img
+                  class="h-full"
+                  src="c2-assets/india-gate-logo.png"
+                  alt=""
+                />
+              </div>
+
+              <span
+                class="bg-[#2A4D97] py-3 px-3 min-[500px]:px-7 rounded-xl mt-2 whitespace-nowrap text-xs sm:text-base text-white"
+                >World’s No.1 Rice</span
+              >
+
+              <p
+                class="text-lg min-[500px]:text-xl sm:text-3xl md:text-4xl lg:text-2xl min-[1200px]:text-4xl text-white whitespace-nowrap"
+              >
+                UP to <span class="font-bold">40% OFF</span>
+              </p>
+            </div>
+
+            <!-- image -->
+            <div
+              class="flex-1 lg:basis-1/2 flex items-center justify-end scale-[80%] sm:scale-100"
+            >
+              <img src="c2-assets/india-gate-mock-up.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="mt-20 h-[400px] bg-main-clr"></footer>
   </body>
 </html>
 
