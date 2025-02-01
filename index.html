@@ -31,6 +31,12 @@
       tailwind.config = {
         theme: {
           extend: {
+            keyframes: {
+              "banner-description": {
+                "0%": { transform: "translateY(100%)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+            },
             fontFamily: {
               sora: ["Sora", "serif"],
             },
@@ -42,27 +48,6 @@
         },
       };
     </script>
-
-    <!-- custom css -->
-    <style>
-      @keyframes animateElement {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .banner-header {
-        animation: animateElement 1s ease forwards;
-      }
-
-      .banner-image {
-        animation: animateElement 1s ease-in-out forwards;
-      }
-      .banner-desc {
-        animation: animateElement 1s ease-in-out forwards;
-      }
-    </style>
   </head>
   <body class="font-sora">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
@@ -132,7 +117,7 @@
               On, Prices You’ll Love!
             </h1>
             <p
-              class="md:w-[80%] lg:w-[50%] mx-auto px-4 sm:px-10 opacity-0 banner-desc -translate-y-6"
+              class="md:w-[80%] lg:w-[50%] mx-auto px-4 sm:px-10 -translate-y-6 animate-[banner-description_1s_ease-in-out_forwards]"
             >
               Shop your daily essentials at unbeatable prices. From fresh
               produce to pantry staples, we’ve got you covered every day!
@@ -140,7 +125,9 @@
           </div>
 
           <!-- banner image -->
-          <div class="banner-image translate-y-96 opacity-20">
+          <div
+            class="banner-image translate-y-96 opacity-20 animate-[banner-description_1s_ease-in-out_forwards]"
+          >
             <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="" />
           </div>
         </section>
@@ -799,7 +786,7 @@
           <p>Follow Us</p>
 
           <!-- icon container -->
-          <div class="text-3xl flex gap-7 mt-3">
+          <div class="text-3xl flex gap-7 mt-3 text-[#EFEBE3]">
             <i class="fa-brands fa-facebook hover:scale-110"></i>
 
             <i class="fa-brands fa-instagram hover:scale-110"></i>
